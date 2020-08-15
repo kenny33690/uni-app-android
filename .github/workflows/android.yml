@@ -18,6 +18,6 @@ jobs:
       with:
         java-version: 1.8
     - name: 移动到android目录
-      run: cd ./.github
+      run: cd ./.githu
     - name: 编译apk
       run: bash ./gradlew clean build
