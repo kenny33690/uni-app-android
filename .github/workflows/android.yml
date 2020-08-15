@@ -22,3 +22,5 @@ jobs:
     #   run: cd ./android
     - name: 编译apk
       run: bash ./android/gradlew clean build
+    - name: 测试
+      run: cat ../README.mg
