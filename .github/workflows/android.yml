@@ -22,4 +22,4 @@ jobs:
     - name: Build with Gradle
       run: chmod +x gradlew && ./gradlew clean build
     - name: 列出目录文件
-      run: ls 
+      run: ls ./
