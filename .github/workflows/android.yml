@@ -18,6 +18,9 @@ jobs:
       with:
         java-version: 1.8
     - name: 移动到android目录
-      uses: ./android
+      # uses: ./android
+      run: cd ./android
     - name: 编译apk
       run: bash ./gradlew clean build
+    - name: logEnv
+      run: printEnv
