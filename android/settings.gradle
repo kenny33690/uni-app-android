@@ -1,1 +1,2 @@
-include ':simpleDemo'
+rootProject.name='android'
+include ':app'
