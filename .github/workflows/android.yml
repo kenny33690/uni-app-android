@@ -17,9 +17,7 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 1.8
-    - name: cd Android
+    - name: 移动到android目录
       run: cd ./android
-    - name: Build with Gradle
-      run: chmod +x gradlew && ./gradlew clean build
-    - name: 列出目录文件
-      run: ls 
+    - name: 编译apk
+      run: bash ./gradlew clean build
