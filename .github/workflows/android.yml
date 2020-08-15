@@ -23,4 +23,4 @@ jobs:
     #   # uses: ./android
     #   run: cd ./android
     - name: 编译apk
-      run: ./android/gradlew clean build
+      run: ./build
