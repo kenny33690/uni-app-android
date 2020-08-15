@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+
+echo "编译开始"
+cd ./android
+./gradlew clean build
