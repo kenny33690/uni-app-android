@@ -20,4 +20,4 @@ jobs:
     - name: cd Android
       run: cd ./android
     - name: Build with Gradle
-      run: ./gradlew build
+      run: chmod +x gradlew && ./gradlew clean build
