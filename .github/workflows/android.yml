@@ -19,8 +19,10 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 1.8
-    # - name: 移动到android目录
-    #   # uses: ./android
-    #   run: cd ./android
     - name: 编译apk
-      run: ./build
+      run: ./build #git仓库下的build
+    - name: 上传apk
+      uses: actions/download-artifact@v2
+      with:
+        name: uni-app-android
+        path: android/apks.tar.gz

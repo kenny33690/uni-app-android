@@ -3,3 +3,8 @@
 echo "编译开始"
 cd ./android
 ./gradlew clean build
+mkdir apks
+echo "复制apk"
+cp ./app/build/**/*.apk ./apks
+echo "打压缩包"
+tar -czvf apks.tar.gz apks
