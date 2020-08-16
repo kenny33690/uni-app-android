@@ -25,4 +25,4 @@ jobs:
       uses: actions/download-artifact@v2
       with:
         name: uni-app-android
-        path: android/apks.tar.gz
+        path: apks.tar.gz

@@ -8,3 +8,4 @@ echo "复制apk"
 cp ./app/build/outputs/apk/**/*.apk ./apks
 echo "打压缩包"
 tar -czvf apks.tar.gz apks
+mv apks.tar.gz ../
